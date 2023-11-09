@@ -529,5 +529,24 @@
       (function(w,d,n,c){w.CalltouchDataObject=n;w[n]=function(){w[n]["callbacks"].push(arguments)};if(!w[n]["callbacks"]){w[n]["callbacks"]=[]}w[n]["loaded"]=false;if(typeof c!=="object"){c=[c]}w[n]["counters"]=c;for(var i=0;i<c.length;i+=1){p(c[i])}function p(cId){var a=d.getElementsByTagName("script")[0],s=d.createElement("script"),i=function(){a.parentNode.insertBefore(s,a)},m=typeof Array.prototype.find === 'function',n=m?"init-min.js":"init.js";s.async=true;s.src="https://mod.calltouch.ru/"+n+"?id="+cId;if(w.opera=="[object Opera]"){d.addEventListener("DOMContentLoaded",i,false)}else{i()}}})(window,document,"ct","9o3490hs");
       </script>
       <!-- calltouch -->
+      <!-- Roistat Counter Start -->
+
+<script>
+
+  (function(w, d, s, h, id) {
+  
+   w.roistatProjectId = id; w.roistatHost = h;
+  
+   var p = d.location.protocol == "https:" ? "https://"; : "http://";;
+  
+   var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
+  
+   var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+  
+  })(window, document, 'script', 'cloud.roistat.com', 'fbe8bbbbe1efa73b7c4922c993212ca7');
+  
+  </script>
+  
+  <!-- Roistat Counter End -->
   </body>
 </html>
